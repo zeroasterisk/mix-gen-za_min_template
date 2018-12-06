@@ -9,22 +9,22 @@ defmodule ZaMinTemplate.Mixfile do
     { :ex_doc,         ">0.0.0",  only: [:dev, :test] },
   ]
 
-  @maintainers ["Your Name <youe@example.com>"]
-  @github      "https://github.com/•••/#{@name}"
+  @maintainers ["Alan Blount <alan@zeroasterisk.com>"]
+  @github      "https://github.com/zeroasterisk/mix-gen-za_min_template"
 
   @description """
-  What your template does (less than 300 characters)
+  A minimal elixir app, with credo & test.watch - ready for rapid TDD & mix tasks
   """
-  
+
   # ------------------------------------------------------------
-  
+
   def project do
     in_production = Mix.env == :prod
     [
       app:     @name,
       version: @version,
       deps:    @deps,
-      elixir:  "~> 1.4",
+      elixir:  "~> 1.7",
       package: package(),
       description:     @description,
       build_embedded:  in_production,
@@ -44,5 +44,5 @@ defmodule ZaMinTemplate.Mixfile do
 #      extra:       %{ "type" => "a_template_for_mix_gen" },
     ]
   end
-  
+
 end
