@@ -18,6 +18,12 @@ defmodule <%= @project_name_camel_case %>.Helper do
   def get_file_stream(path), do: path |> File.stream!()
 
   @doc """
+  a-z alphabet
+  """
+  def letters, do: ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p",
+"q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+
+  @doc """
   convert a string to a freq count per letter
 
   ## Examples

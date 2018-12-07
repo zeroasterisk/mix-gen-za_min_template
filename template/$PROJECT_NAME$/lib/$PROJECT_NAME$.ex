@@ -2,7 +2,7 @@ defmodule <%= @project_name_camel_case %> do
   @moduledoc """
   Documentation for <%= @project_name_camel_case %>.
   """
-  import <%= @project_name_camel_case %>.Helper
+  # import <%= @project_name_camel_case %>.Helper
   require Logger
 
   @doc """
