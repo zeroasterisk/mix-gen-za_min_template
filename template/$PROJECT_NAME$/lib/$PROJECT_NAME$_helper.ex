@@ -4,6 +4,19 @@ defmodule <%= @project_name_camel_case %>.Helper do
   """
   # require Logger
 
+  @input "whatever"
+
+
+  @doc """
+  quick and simple @input grabber
+  """
+  def get_input, do: @input
+
+  @doc """
+  quick and simple obtain a stream from an input file path
+  """
+  def get_file_stream(path), do: path |> File.stream!()
+
   @doc """
   convert a string to a freq count per letter
 

@@ -10,13 +10,23 @@ defmodule <%= @project_name_camel_case %> do
 
   ## Examples
 
-      iex> <%= @project_name_camel_case %>.main(:todo)
-      :todo
+      iex> <%= @project_name_camel_case %>.main(:p1)
+      :TODO
 
-      iex> <%= @project_name_camel_case %>.main(:more)
-      :more
+      iex> <%= @project_name_camel_case %>.main(:p2)
+      :TODO
 
   """
+  def main(:p1) do
+    answer = :TODO
+    Logger.info "Here is P1 #{answer}"
+    answer
+  end
+  def main(:p2) do
+    answer = :TODO
+    Logger.info "Here is P2 #{answer}"
+    answer
+  end
   def main(arg) do
     Logger.info "invoked main(#{inspect(arg)})"
     arg
@@ -37,7 +47,7 @@ defmodule <%= @project_name_camel_case %> do
   def func_template(nil), do: :nope
   def func_template(true), do: :yep
   def func_template(arg) do
-    Logger.info "invoked func_template(#{inspect(arg)}) (no skip)"
+    # Logger.info "invoked func_template(#{inspect(arg)}) (no skip)"
     arg
   end
 
